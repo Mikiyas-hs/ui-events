@@ -33,3 +33,14 @@ interaction.addEventListener('animationend', jumpHandler)
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // bibberLink.classList.toggle...
+
+
+let bibberLink = document.querySelector('a:nth-of-type(11)')
+
+bibberLink.addEventListener('keydown', bibber)
+function bibber(eventObject) {
+  // ALs ik op a enter
+  if (eventObject.keyCode == 65) {
+    bibberLink.classList.toggle('bibber')
+  }
+}
